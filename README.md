@@ -1,0 +1,3 @@
+# Node.js Server Unresponsiveness
+
+This repository demonstrates a common issue in Node.js servers: unresponsiveness caused by long-running synchronous operations within the request handler.  The `bug.js` file shows a server that simulates a 10-second delay, blocking the main thread and preventing it from handling other requests during that time. The solution in `bugSolution.js` addresses the problem by using asynchronous operations.
